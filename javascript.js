@@ -2,6 +2,7 @@ let wins=0;
 let lose=0;
 let playerSelection;
 game();
+
 function getComputerChoice(){
     let randomChoice = Math.floor(Math.random()*3);
     return randomChoice;
@@ -37,7 +38,7 @@ function checksRoundWinner(playerSelection, computerSelection){
     }
 }
 
-function playerSelectionFunc(message="Type in your Choice (Rock, Paper or Sciccors)!"){
+function playerSelectionFunc(message="Type in your Choice (Rock, Paper or Scissors)!"){
     playerSelection = prompt(message).toLowerCase();
         if(playerSelection=="scissors"){
             playerSelection=0;
